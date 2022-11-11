@@ -1,0 +1,72 @@
+guess=input("enter a number between "[minimum]"and" [maximum]": ")
+
+resume@ubuntu:~$ ~/.ssh git clone git@github.com:solarstableCov/Guessing_Game.git
+bash: /home/resume/.ssh: Is a directory
+resume@ubuntu:~$ cd week2
+resume@ubuntu:~/week2$ /.ssh git clone git@github.com:solarstableCov/Guessing_Game.git
+bash: /.ssh: No such file or directory
+resume@ubuntu:~/week2$ ~/.ssh git clone git@github.com:solarstableCov/Guessing_Game.git
+bash: /home/resume/.ssh: Is a directory
+resume@ubuntu:~/week2$ git clone git@github.com:solarstableCov/Guessing_Game.git
+Cloning into 'Guessing_Game'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+resume@ubuntu:~/week2$ python3 guessing_game.py
+python3: can't open file 'guessing_game.py': [Errno 2] No such file or directory
+resume@ubuntu:~/week2$ cd Guessing_Game
+resume@ubuntu:~/week2/Guessing_Game$ python3 guessing_game.py
+resume@ubuntu:~/week2/Guessing_Game$ python3 guessing_game.py
+  File "guessing_game.py", line 7
+    guess=input("enter a number between "[minimum]" and "[maximum]": ")
+                                                  ^
+SyntaxError: invalid syntax
+resume@ubuntu:~/week2/Guessing_Game$ 
+resume@ubuntu:~/week2/Guessing_Game$ python3 guessing_game.py
+  File "guessing_game.py", line 7
+    guess=input("enter a number between "[minimum]"and" [maximum]": ")
+                                                  ^
+SyntaxError: invalid syntax
+resume@ubuntu:~/week2/Guessing_Game$ python3 guessing_game.py
+Traceback (most recent call last):
+  File "guessing_game.py", line 6, in <module>
+    guess=none
+NameError: name 'none' is not defined
+resume@ubuntu:~/week2/Guessing_Game$ python3 guessing_game.py
+enter a number between 1 and 2020
+Too high!
+Enter number again: 3
+Too low
+Enter number again: 4
+Too low
+Enter number again: 5
+Too low
+Enter number again: 6
+Too low
+Enter number again: 7
+Too low
+Enter number again: 8
+Too low
+Enter number again: 9
+Too low
+Enter number again: 10
+Too low
+Enter number again: 11
+Too low
+Enter number again: 12
+Too low
+Enter number again: 13
+Too low
+Enter number again: 14
+Too low
+Enter number again: 15
+Too low
+Enter number again: 16
+Too low
+Enter number again: 17
+Too low
+Enter number again: 18
+you guessed it right!!
+resume@ubuntu:~/week2/Guessing_Game$ 
+
