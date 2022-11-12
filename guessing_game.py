@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import random
+count=0
 difficulty=input("Choose a difficulty (Easy, Medium, Hard, Hardcore): ")
 if difficulty=="Easy":
    minimum=0
@@ -21,13 +22,15 @@ answer=random.randint(minimum,maximum)
 print(answer)
 guess=input("enter a number: " )
 guess=int(guess)
-while answer!= guess:
+while count >=0:
+    count+=1
     if guess < answer:
         print("Too low")
         guess = int(input("Enter number again: "))
     elif guess > answer:
         print("Too high!")
         guess = int(input("Enter number again: "))
-    else:
-      break
-print("you guessed it right!!")
+    elif guess == answer:
+        print("you guessed it right!!")
+        print(count)
+        break
