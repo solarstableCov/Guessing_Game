@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 import random
-minimum=1
-maximum=20
+minimum= int(input("Enter Lower bound: "))
+maximum= int(input("Enter Upper bound: "))
 answer=random.randint(minimum,maximum)
 print(answer)
-guess=input("enter a number between 1 and 20: " )
+guess=input("enter a number: " )
 guess=int(guess)
 while answer!= guess:
     if guess < answer:
