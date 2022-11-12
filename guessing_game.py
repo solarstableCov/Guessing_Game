@@ -32,5 +32,11 @@ while count >=0:
         guess = int(input("Enter number again: "))
     elif guess == answer:
         print("you guessed it right!!")
-        print(count)
+        print("You have tried ",count," times")
         break
+if count<5:
+     print("Well done")
+elif count >=5 and count <=10:
+     print ("not bad")
+else:
+     print ("try harder next time!")
